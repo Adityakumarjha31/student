@@ -1,0 +1,23 @@
+create database dac;
+use dac;
+
+create table students(
+id int auto_increment primary key,
+name varchar(20),
+email varchar(20),
+course varchar(20), 
+Address varchar(20),
+mobile varchar(20),
+DOB varchar(200),
+dept varchar(100)
+);
+
+create table dept(
+dept_id int auto_increment primary key,
+dept_name varchar(100)
+);
+
+INSERT INTO dept (dept_name) VALUES 
+  ('computer science'),
+  ('mechanichal'),
+  ('business');
